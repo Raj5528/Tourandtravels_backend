@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 
 
 mongoose.set("strictQuery", false);
-mongoose.connect('mongodb://127.0.0.1:27017/Travelling_agency', { useNewUrlParser: true, useUnifiedTopology: true }).then(res => {
+mongoose.connect('mongodb+srv://Raj:Jalandhar123@cluster0.fddd12w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true }).then(res => {
   console.log("Connected to MongoDB");
 }).catch(err => {
   console.log("Connection errr: ", err);
